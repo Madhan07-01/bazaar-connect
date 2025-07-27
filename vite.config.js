@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // ✅ This ensures correct asset paths on Netlify
+  // ❌ Do NOT set base for Netlify
+  // base: './' → REMOVE this
 })
