@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base font and layout tweaks for your app */
+:root {
+  font-family: 'Segoe UI', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f8fafc; /* Light neutral background */
+  color: #1e293b; /* Slate color for readability */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: inherit;
+}
+
+a {
+  font-weight: 500;
+  color: #3d22c5; /* Tailwind green-500 */
+  text-decoration: none;
+}
+a:hover {
+  color: #16a34a; /* green-600 */
+}
+
+button {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+/* For light/dark mode (optional) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #537da7;
+    background-color: #1e293b;
+  }
+  a {
+    color: #a8f7c5;
+  }
+  button {
+    background-color: #334155;
+    color: #cfd6dd;
+  }
+}
